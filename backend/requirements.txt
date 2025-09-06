@@ -8,3 +8,4 @@ langchain-text-splitters  # Just for a robust text splitter
 flask-cors # To allow our frontend to call the backend
 node
 PyMuPDF
+gunicorn
