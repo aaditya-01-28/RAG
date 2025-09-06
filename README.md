@@ -110,7 +110,7 @@ Frontend runs at 👉 http://localhost:5173
 ```
 ### 📝 Remarks & Tradeoffs
 API Model Decommissioning: During development, some providers (Groq, Cohere) decommissioned older models. The app was updated to use the latest models.
-👉 Tip: Always keep model IDs configurable, since they change often.
+- 👉 Tip: Always keep model IDs configurable, since they change often.
 
 Vector Deletion Strategy: Initially, the ingest endpoint cleared the entire Pinecone index before uploads, causing errors on empty indexes.
-👉 Fixed by removing deletion step, now the app supports querying across multiple uploaded documents.
+- 👉 Fixed by removing deletion step, now the app supports querying across multiple uploaded documents.
