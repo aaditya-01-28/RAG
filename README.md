@@ -3,7 +3,7 @@
 This is a comprehensive, full-stack **Retrieval-Augmented Generation (RAG)** application that allows users to upload documents (`.txt` and `.pdf`) and ask questions about their content. The application provides **grounded, streaming answers with source citations**, all delivered through a clean, modern web interface.
 
 This project was built to demonstrate a deep understanding of modern AI application architecture, from frontend development to backend API integration and real-world debugging.
-
+* **Live URL:**    https://rag-frontend-vcmi.onrender.com
 ---
 
 ## 🏛️ Architecture
@@ -11,14 +11,12 @@ The application is composed of a **React frontend** and a **Flask backend**.
 The RAG pipeline follows a **retriever–reranker model** for high-quality, grounded answers.
 
 ### Ingestion Flow
-User Uploads File (PDF/TXT) → Flask Backend → Text Extraction → Chunking
-→ Google AI (Embeddings) → Pinecone (Upsert Vectors)
+User Uploads File (PDF/TXT) ---→ Flask Backend --→ Text Extraction --→ Chunking --→ Google AI (Embeddings) --→ Pinecone (Upsert Vectors)
 
 
 
 ### Query Flow
-User Asks Question → Flask Backend → Google AI (Embeddings) → Pinecone (Retrieve Top-k)
-→ Cohere (Rerank) → Groq LLM (Generate Answer) → Real-Time Streaming → React Frontend
+User Asks Question --→ Flask Backend --→ Google AI (Embeddings) --→ Pinecone (Retrieve Top-k) --→ Cohere (Rerank) --→ Groq LLM (Generate Answer) --→ Real-Time Streaming --→ React Frontend
 
 
 
